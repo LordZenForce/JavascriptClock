@@ -21,10 +21,10 @@ var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSecon
     }
   </script>
 </head>
-<body onload="updateClock(); setInterval('updateClock()', 1000 )">
   <h1>Set a Time!</h1>
   <br>
   <h2>Be Brave!<h2>
-      <span id="clock"> &nbsp; </span>
-    </body>
+      <span id="clock"> &nbsp;
+    <body onload="setInterval('updateClock()', 1000 )">
+      </span>
 </html>
