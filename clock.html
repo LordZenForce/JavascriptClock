@@ -2,12 +2,7 @@
 <head>
   <title>Javascript Clock</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <h1>Set a Time!</h1>
-  <br>
-  <h2>Be Brave!<h2>
-   <script>
+  <script>
     var CurrentTime = new Date ();
 var CurrentHours = currentTime.getHours ();
 var CurrentMinutes = currentTime.getMinutes ();
@@ -21,7 +16,13 @@ CurrentHours = (CurrentHours > 12) ? CurrentHours - 12 : CurrentHours;
 CurrentHours = (CurrentHours == 0) ? 12 : CurrentHours;
 
 var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSeconds + " " + TimeOfDay;
-
+  </script>
+</head>
+<body>
+  <h1>Set a Time!</h1>
+  <br>
+  <h2>Be Brave!<h2>
+    <script>
 <span id="clock"> &nbsp; </span>
   <value>document.GetElementById("jsclock").firstChild.nodeValue= currentTimeString; </value>
      </script>
