@@ -19,14 +19,14 @@ CurrentHours = (CurrentHours == 0) ? 12 : CurrentHours;
 
 var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSeconds + " " + TimeOfDay;
     }
+    <span id="clock"> &nbsp; </span>
   </script>
-   <value>document.GetElementById("jsclock").firstChild.nodeValue= currentTimeString; </value>
 </head>
 <body>
   <h1>Set a Time!</h1>
   <br>
   <h2>Be Brave!<h2>
-    <body onload="updateClock(); setInterval('updateClock()', 1000 )">
-<span id="clock"> &nbsp; </span>
+    <body onload="updateClock(); setInterval('updateClock()', 1000 );>
+                  </body>
 </body>
 </html>
