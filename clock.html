@@ -18,13 +18,13 @@ CurrentHours = (CurrentHours > 12) ? CurrentHours - 12 : CurrentHours;
 CurrentHours = (CurrentHours == 0) ? 12 : CurrentHours;
 
 var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSeconds + " " + TimeOfDay;
+   
+document.getElementById("clock").FirstChild.nodeValue = CurrentTimeString
     }
   </script>
 </head>
   <h1>Set a Time!</h1>
   <br>
   <h2>Be Brave!<h2>
-      <span id="clock"> &nbsp;
-    <body onload="setInterval('updateClock()', 1000 )">
-      </span>
+    <script>updateClock</script>
 </html>
