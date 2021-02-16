@@ -16,4 +16,4 @@ var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSecon
         
 }
     
-  
+  document.getElementById("clock.js").firstChild.nodeValue = currentTimeString;
