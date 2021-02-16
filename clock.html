@@ -5,21 +5,21 @@
   <script>
   function updateClock ()
     {
-    var CurrentTime = new Date ();
-var CurrentHours = currentTime.getHours ();
-var CurrentMinutes = currentTime.getMinutes ();
-var CurrentSeconds = currentTime.getSeconds ();
-
-CurrentMinutes = (CurrentMinutes < 10 ? "0" : " ") + CurrentMinutes;
-CurrentSeconds = (CurrentSeconds < 10 ? "0" : " ") + CurrentSeconds;
-
-var TimeOfDay = (CurrentHours < 12) ? "AM" : "PM";
-CurrentHours = (CurrentHours > 12) ? CurrentHours - 12 : CurrentHours;
-CurrentHours = (CurrentHours == 0) ? 12 : CurrentHours;
-
-var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSeconds + " " + TimeOfDay;
- 
-document.getElementById("time") = currentTimeString;
+ function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
 }
   </script>
 </head>
