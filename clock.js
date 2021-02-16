@@ -14,7 +14,7 @@ CurrentHours = (CurrentHours == 0) ? 12 : CurrentHours;
 
 var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSeconds + " " + TimeOfDay;
  
-document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+document.getElementById("clock") = currentTimeString;
 }
     
   
