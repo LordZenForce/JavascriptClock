@@ -11,3 +11,5 @@ CurrentHours = (CurrentHours > 12) ? CurrentHours - 12 : CurrentHours;
 CurrentHours = (CurrentHours == 0) ? 12 : CurrentHours;
 
 var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSeconds + " " + TimeOfDay;
+
+document.GetElementById("jsclock").firstChild.nodeValue= currentTimeString;
