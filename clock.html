@@ -2,6 +2,7 @@
 <head>
   <title>Javascript Clock</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
   function updateClock ()
     {
     var CurrentTime = new Date ();
@@ -20,11 +21,8 @@ var CurrentTimeString = CurrentHours + ":" + CurrentMinutes + ":" + CurrentSecon
  
 document.getElementById("time") = currentTimeString;
 }
+  </script>
 </head>
   <body onload="updateClock()">
-    <h1>Set a Time!</h1>
-  <br>
-  <h2>Be Brave!<h2>
-  <script src="clock.js"></script>
-      </body>
+   </body>
 </html>
